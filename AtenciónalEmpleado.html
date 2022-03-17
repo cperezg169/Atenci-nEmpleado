@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="es-es" xml:lang="es-es" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------------------------------------------------------Diseño Exportado de Internet---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!--------------------------------------------------------Funciones Exportado de Internet--------------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--------------------------------------------------------Modal------------------------------------------------------>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+    <link rel="shortcut icon" href="Quejas.png">
+    <title>Información | 2022</title>
+    
+</head>
+
+<body >
+
+    <style type="text/css">
+        .btn {
+            display: inline-block;
+            padding: .75rem 1.25rem;
+            border-radius: 1rem;
+            font-size: 1rem;
+            letter-spacing: .150rem;
+            }
+      </style>
+
+<!--------------------------------------------------------Carga de La Pagina------------------------------------------------------> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<div class="loader"></div>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+            Swal.fire({
+            type: 'info',
+            titleText: 'FORMULARIO DE QUEJAS Y/O SUGERENCIAS',
+            confirmButtonColor: '#20B2AA',
+            confirmButtonText: 'OK',
+            allowEscapeKey: true,
+            html: '<p></p> El presente formulario es de uso exclusivo para informar acciones anómalas en el proceso de traslado del personal temporal, sin relación de dependenia, al renglón presupuestario 011 "Personal Permanente"'
+            }); 
+    });
+</script>
+
+<!--------------------------------------------------------Formulario Web------------------------------------------------------>                
+
+
+<form autocomplete="off" id="formulario1" name="formulario1" autocomplete="off" novalidate class="needs-validation">
+             
+                    
+    <div id="content" class="content">
+        <div class="container mt-6">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">   
+
+                    <div style="text-align: center;">
+                        <div><img class="icon" src="https://i.ibb.co/Mn2jxnp/Imagen1-FINAL.jpg" style="width: 70%; height: 70%;"></div>
+                        <br>
+
+                        <h4 style="color: #2c4350;"><b>Formulario Electrónico para el envío de quejas o sugerencias, <br>Ministerio de Salud Pública y Asistencia Social </b></h4>
+                        <pre></pre>
+                    </div> 
+
+                            <hr></hr>
+                                    <div style="line-height: 50%;">
+                                    <label class="text-danger mb-3"><b>Obligatorio *</b></label>
+                                    </div>
+
+                            <pre></pre> 
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">   
+                                    <label style="color: #2C3E50;"><b>DATOS DE IDENTIFICACIÓN Y CONTACTO:</b></label>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fas fa-address-card" aria-hidden="true"></i>
+                                    <label class="form-control-label">Identificación<span style="color: rgb(0, 132, 255)";><b> *</b></span></label>
+                                    <input onkeyup="mayus(this);" id="Identificación" name="Identificación" class="form-control" placeholder="Ingresar Identificación" type="text" onclick="audio.play();"/>
+                                    </div>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    <label class="form-control-label">Nombres<span style="color: rgb(0, 132, 255)";><b> *</b></span></label>
+                                    <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Nombres" name="Nombres" placeholder="Nombres" class="form-control">   
+                                    </div>
+                                    </div>
+                                      
+                            
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    <label class="form-control-label">Apellidos<span style="color: rgb(0, 132, 255)";><b> *</b></span></label>
+                                    <input style="text-transform:uppercase" onclick="audio.play();" onkeypress="return soloLetras(event)" pattern="/^?\d+\.?\d*$/" spellcheck="true" onkeyup="mayus(this);" type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos" class="form-control">    
+                                    </div>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <label class="form-control-label">Teléfono<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                                    <input type="tel" id="Teléfono" required onclick="audio.play();" name="Teléfono" placeholder="TELÉFONO" class="form-control" pattern="/^?\d+\.?\d*$/" onKeyPress="if(this.value.length==15) return false;"/>
+                                        <div class="invalid-feedback">
+                                        <b>Por favor, ingrese el número de teléfono.</b>
+                                        </div>     
+                                    </div>
+                                    </div>
+
+
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                    <label class="form-control-label">Correo Electrónico<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                                    <input style="text-transform:uppercase" onclick="audio.play();" required spellcheck="true" onkeyup="mayus(this);" type="email" id="Correo" name="Correo" size="64" minlength="3"  placeholder="CORREO ELECTRÓNICO" class="form-control">
+                                        <div class="invalid-feedback">
+                                        <b>Por favor, ingrese el correo electronico.</b>
+                                        </div>    
+                                    </div>
+                                    </div>
+                                    </div>
+                            
+                            <pre></pre>
+                            
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">  
+                                    <label style="color: #2C3E50;"><b>DATOS DE LA SUGERENCIA O QUEJA:</b></label>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-4">
+                                    <div class="mb-3">
+                                    <i class="fas fa-list-alt" aria-hidden="true"></i>
+                                    <label class="form-control-label">Asunto<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                                    <select class="custom-select browser-default & form-control" onchange="CambiaMo();" required data-style="btn-danger"  id="Motivo" name="Motivo" onclick="audio.play();">
+                                    <option value="" disabled selected>-</option>
+                                    <option value="SUGERENCIA">SUGERENCIA</option>
+                                    <option value="QUEJA">QUEJA</option>
+                                    </select>
+                                        <div class="invalid-feedback">
+                                        <b>Por favor, elija el asunto.</b>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <input type="text" id="SelectMotivo" name="SelectMotivo" style="display: none;">
+                                    <script>
+                                        function CambiaMo(){
+                                            var Motivo ="";
+                                        document.getElementById('SelectMotivo').value =  $('#Motivo').val() 
+                                        }
+                                    </script>
+
+                                    <input type="text" id="SelectUE" name="SelectUE" style="display: none;">
+                                    <script>
+                                        function CambiaUE(){
+                                            var Unidad_Ejecutora="";
+                                        document.getElementById('SelectUE').value = $('#Unidad_Ejecutora').val()
+                                        }
+                                    </script>
+
+
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fas fa-building form-control-feedback"></i>
+                                    <label class="form-control-label">Unidad Ejecutora<span style="color: rgb(255, 0, 0)";><b> *</b></span></label>
+                                    <select class="custom-select browser-default & form-control" onchange="CambiaUE();" required data-style="btn-danger" id="Unidad_Ejecutora" name="Unidad_Ejecutora" placeholder="" class="form-control" onclick="audio.play();">
+                                        <option value="" disabled selected>-</option>
+                                        <option value="201-Departamento Administrativo">201-Departamento Administrativo</option>
+                                        <option value="202-Dirección De Área De Salud Guatemala Nor Oriente">202-Dirección De Área De Salud Guatemala Nor Oriente</option>
+                                        <option value="203-Dirección De Área De Salud Guatemala Nor Occidente">203-Dirección De Área De Salud Guatemala Nor Occidente</option>
+                                        <option value="204-Dirección De Área De Salud Guatemala Sur">204-Dirección De Área De Salud Guatemala Sur</option>
+                                        <option value="205-Dirección De Área De Salud De El Progreso">205-Dirección De Área De Salud De El Progreso</option>
+                                        <option value="206-Dirección De Área De Salud De Sacatepéquez">206-Dirección De Área De Salud De Sacatepéquez</option>
+                                        <option value="207-Direccion De Área De Salud De Chimaltenango">207-Direccion De Área De Salud De Chimaltenango</option>
+                                        <option value="208-Dirección De Área De Salud De Escuintla">208-Dirección De Área De Salud De Escuintla</option>
+                                        <option value="209-Dirección De Área De Salud De Santa Rosa">209-Dirección De Área De Salud De Santa Rosa</option>
+                                        <option value="210-Dirección De Área De Salud De Sololá">210-Dirección De Área De Salud De Sololá</option>
+                                        <option value="211-Dirección De Área De Salud De Totonicapán">211-Dirección De Área De Salud De Totonicapán</option>
+                                        <option value="212-Dirección De Área De Salud De Quetzaltenango">212-Dirección De Área De Salud De Quetzaltenango</option>
+                                        <option value="213-Dirección De Área De Salud De Suchitepéquez">213-Dirección De Área De Salud De Suchitepéquez</option>
+                                        <option value="214-Dirección De Área De Salud De Retalhuleu">214-Dirección De Área De Salud De Retalhuleu</option>
+                                        <option value="215-Dirección De Área De Salud De San Marcos">215-Dirección De Área De Salud De San Marcos</option>
+                                        <option value="216-Dirección De Área De Salud De Huehuetenango">216-Dirección De Área De Salud De Huehuetenango</option>
+                                        <option value="217-Dirección De Área De Salud De Quiché">217-Dirección De Área De Salud De Quiché</option>
+                                        <option value="218-Dirección De Área De Salud De Ixcán">218-Dirección De Área De Salud De Ixcán</option>
+                                        <option value="219-Dirección De Área De Salud De Baja Verapaz">219-Dirección De Área De Salud De Baja Verapaz</option>
+                                        <option value="220-Dirección De Área De Salud De Alta Verapaz">220-Dirección De Área De Salud De Alta Verapaz</option>
+                                        <option value="221-Dirección De Área De Salud De Petén Norte">221-Dirección De Área De Salud De Petén Norte</option>
+                                        <option value="222-Dirección De Área De Salud De Izabal">222-Dirección De Área De Salud De Izabal</option>
+                                        <option value="223-Dirección De Área De Salud De Zacapa">223-Dirección De Área De Salud De Zacapa</option>
+                                        <option value="224-Dirección De Área De Salud De Chiquimula">224-Dirección De Área De Salud De Chiquimula</option>
+                                        <option value="225-Dirección De Área De Salud De Jalapa">225-Dirección De Área De Salud De Jalapa</option>
+                                        <option value="226-Dirección De Área De Salud De Jutiapa">226-Dirección De Área De Salud De Jutiapa</option>
+                                        <option value="227-Hospital General San Juan De Dios">227-Hospital General San Juan De Dios</option>
+                                        <option value="228-Hospital De Salud Mental Dr. Federico Mora">228-Hospital De Salud Mental Dr. Federico Mora</option>
+                                        <option value="229-Hospital Nacional De Ortopedia Y Rehabilitación Dr. Jorge Von Ahn">229-Hospital Nacional De Ortopedia Y Rehabilitación Dr. Jorge Von Ahn</option>
+                                        <option value="230-Hospital Roosevelt">230-Hospital Roosevelt</option>
+                                        <option value="231-Hospital Infantil De Infectología Y Rehabilitación">231-Hospital Infantil De Infectología Y Rehabilitación</option>
+                                        <option value="232-Hospital San Vicente">232-Hospital San Vicente</option>
+                                        <option value="233-Hospital Nacional De Amatitlán">233-Hospital Nacional De Amatitlán</option>
+                                        <option value="234-Hospital De El Progreso">234-Hospital De El Progreso</option>
+                                        <option value="235-Hospital Pedro De Bethancourt">235-Hospital Pedro De Bethancourt</option>
+                                        <option value="236-Hogar De Ancianos Fray Rodrigo De La Cruz">236-Hogar De Ancianos Fray Rodrigo De La Cruz</option>
+                                        <option value="237-Hospital Nacional De Chimaltenango">237-Hospital Nacional De Chimaltenango</option>
+                                        <option value="238-Hospital De Escuintla">238-Hospital De Escuintla</option>
+                                        <option value="239-Hospital De Tiquisate">239-Hospital De Tiquisate</option>
+                                        <option value="240-Hospital Regional De Cuilapa Licenciado Guillermo Fernández Llerena">240-Hospital Regional De Cuilapa Licenciado Guillermo Fernández Llerena</option>
+                                        <option value="241-Hospital Departamental De Sololá">241-Hospital Departamental De Sololá</option>
+                                        <option value="242-Hospital Departamental De Totonicapán">242-Hospital Departamental De Totonicapán</option>
+                                        <option value="243-Hospital Regional De Occidente Quetzaltenango">243-Hospital Regional De Occidente Quetzaltenango</option>
+                                        <option value="244-Hospital De Especialidades Rodolfo Robles">244-Hospital De Especialidades Rodolfo Robles</option>
+                                        <option value="245-Hospital Nacional De Coatepeque">245-Hospital Nacional De Coatepeque</option>
+                                        <option value="246-Hospital De Mazatenango">246-Hospital De Mazatenango</option>
+                                        <option value="247-Hospital De Retalhuleu">247-Hospital De Retalhuleu</option>
+                                        <option value="248-Hospital Nacional De San Marcos Dr. Moisés Villagran Mazariegos">248-Hospital Nacional De San Marcos Dr. Moisés Villagran Mazariegos</option>
+                                        <option value="249-Hospital Nacional Malacatán San Marcos">249-Hospital Nacional Malacatán San Marcos</option>
+                                        <option value="250-Hospital Regional De Huehuetenango Dr. Jorge Vides Molina">250-Hospital Regional De Huehuetenango Dr. Jorge Vides Molina</option>
+                                        <option value="251-Hospital Nacional De San Pedro Necta">251-Hospital Nacional De San Pedro Necta</option>
+                                        <option value="252-Hospital Regional De El Quiché">252-Hospital Regional De El Quiché</option>
+                                        <option value="253-Hospital Nacional De Salamá">253-Hospital Nacional De Salamá</option>
+                                        <option value="254-Hospital De Cobán">254-Hospital De Cobán</option>
+                                        <option value="255-Hospital De San Benito">255-Hospital De San Benito</option>
+                                        <option value="256-Hospital De Melchor De Mencos">256-Hospital De Melchor De Mencos</option>
+                                        <option value="257-Hospital Distrital Sayaxché Petén">257-Hospital Distrital Sayaxché Petén</option>
+                                        <option value="258-Hospital De Poptún">258-Hospital De Poptún</option>
+                                        <option value="259-Hospital De La Amistad Japón Guatemala">259-Hospital De La Amistad Japón Guatemala</option>
+                                        <option value="260-Hospital Nacional Infantil Elisa Martínez, Puerto Barrios, Izabal">260-Hospital Nacional Infantil Elisa Martínez, Puerto Barrios, Izabal</option>
+                                        <option value="261-Hospital Regional De Zacapa">261-Hospital Regional De Zacapa</option>
+                                        <option value="262-Hospital De Chiquimula">262-Hospital De Chiquimula</option>
+                                        <option value="263-Hospital Nacional Nicolasa Cruz Jalapa">263-Hospital Nacional Nicolasa Cruz Jalapa</option>
+                                        <option value="264-Hospital Nacional Ernestina Garcia Vda. De Recinos">264-Hospital Nacional Ernestina Garcia Vda. De Recinos</option>
+                                        <option value="265-Dirección De Área De Salud De Petén Sur Occidente">265-Dirección De Área De Salud De Petén Sur Occidente</option>
+                                        <option value="266-Dirección De Área De Salud De Petén Suroriente">266-Dirección De Área De Salud De Petén Suroriente</option>
+                                        <option value="267-Hospital De Joyabaj">267-Hospital De Joyabaj</option>
+                                        <option value="268-Hospital De Nebaj">268-Hospital De Nebaj</option>
+                                        <option value="269-Hospital De Uspantán">269-Hospital De Uspantán</option>
+                                        <option value="270-Hospital Fray Bartolomé De Las Casas">270-Hospital Fray Bartolomé De Las Casas</option>
+                                        <option value="271-Hospital De La Tinta">271-Hospital De La Tinta</option>
+                                        <option value="272-Escuela Nacional De Enfermeras">272-Escuela Nacional De Enfermeras</option>
+                                        <option value="273-Escuela Nacional De Enfermería De Cobán E Instituto De Adiestramiento Para Personal De Salud De Las Verapaces">273-Escuela Nacional De Enfermería De Cobán E Instituto De Adiestramiento Para Personal De Salud De Las Verapaces</option>
+                                        <option value="274-Escuela Nacional De Enfermería De Occidente">274-Escuela Nacional De Enfermería De Occidente</option>
+                                        <option value="275-Escuela De Auxiliares De Enfermería De Sur Occidente">275-Escuela De Auxiliares De Enfermería De Sur Occidente</option>
+                                        <option value="276-Escuela Para Auxiliares De Enfermería De Oriente">276-Escuela Para Auxiliares De Enfermería De Oriente</option>
+                                        <option value="277-Instituto De Adiestramiento De Personal En Salud Indaps">277-Instituto De Adiestramiento De Personal En Salud Indaps</option>
+                                        <option value="278-Dirección De Área De Salud Guatemala Central">278-Dirección De Área De Salud Guatemala Central</option>
+                                        <option value="279-Programa De Accesibilidad De Medicamentos Proam">279-Programa De Accesibilidad De Medicamentos Proam</option>
+                                        <option value="280-Laboratorio Nacional De Salud">280-Laboratorio Nacional De Salud</option>
+                                        <option value="281-Cementerio Nacional">281-Cementerio Nacional</option>
+                                        <option value="283-Dirección De Área De Salud Ixil">283-Dirección De Área De Salud Ixil</option>
+                                        <option value="284-Hospital De Barillas">284-Hospital De Barillas</option>
+                                        <option value="285-Hospital Nacional Especializado De Villa Nueva">285-Hospital Nacional Especializado De Villa Nueva</option>
+                                        <option value="286-Unidad Especial De Ejecución De Programas Y Proyectos De Salud">286-Unidad Especial De Ejecución De Programas Y Proyectos De Salud</option>
+                                        <option value="287-Hospital General de Tecpan, Tipo I Guatemala">287-Hospital General de Tecpan, Tipo I Guatemala</option>
+                                    </select>
+                                        <div class="invalid-feedback">
+                                        <b>Por favor, elija la unidad ejecutora.</b>
+                                        </div>                                        
+                                    </div>
+                                    </div>
+                                    </div>
+
+                            <pre></pre>  
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">   
+                                    <label style="color: #2C3E50;"><b>SUGERENCIA O QUEJA:</b></label>
+                                    </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="row">
+                                    <div class="col">
+                                    <div class="mb-3">
+                                    <i class="fa fa-align-justify" aria-hidden="true"></i>
+                                    <label class="form-control-label">Detalle su sugerencia o queja<span style="color: rgb(255, 0, 0);"><b> *</b></span></label>
+                                    <textarea style="text-transform:uppercase" required onclick="audio.play();" pattern="/^?\d+\.?\d*$/"  spellcheck="true" onkeyup="mayus(this);" id="Descripción" rows="4" name="Descripción" placeholder="Detalle su sugerencia o queja" class="form-control"></textarea>
+                                        <div class="invalid-feedback">
+                                        <b>Por favor, detalle su sugerencia o queja</b>
+                                        </div>                                        
+                                    </div>
+                                    </div>
+                                    </div>
+
+                            <hr></hr>
+                                    <div style="text-align: center;">
+                                        <button type="submit" style="border: #2C3E50; background: #2C3E50;" onclick="audio.play() & validarSolo();" class="btn btn-primary btn-lg btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i> ENVIAR RESPUESTA</button>
+                                        <button type="reset" style="border: #358d68; background: #358d68;" onclick="location.reload() & audio.play();" class="btn btn-primary btn-lg btn-block"><i class="fa fa-trash" aria-hidden="true"></i> ENVIAR OTRA RESPUESTA</button>
+                                    </div>
+        
+        
+                            <pre></pre>       
+                                    <div style="text-align: center;" id="form_alerts"></div>
+                                    <pre></pre>
+                                
+
+                                    <div id="información" style="text-align: center; line-height: 75%;">
+                                    <label class="form-control-label">Horario de atención: 8:00 am a 16:30 pm</label>
+                                    <br>
+                                    <label class="form-control-label">Teléfono: 2444-7474</label>
+                                    <br>
+                                    <label class="form-control-label">Direccción: 6Av. 3-45 zona 11 Ciudad de Guatemala</label>
+                                    </div>
+                            <pre></pre>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function validarSolo(){
+        var Teléfono = $('input[name="Teléfono"]').val();
+        var Correo = $('input[name="Correo"]').val();
+        var Descripción = $('textarea[name="Descripción"]').val();
+        var SelectMotivo = $('input[name="SelectMotivo"]').val();
+        var SelectUE = $('input[name="SelectUE"]').val();
+
+		if(Teléfono==""){
+            Swal.fire({
+                  type: 'error',
+                  titleText: '¡Campo Incompleto!',
+                  confirmButtonColor: '#20B2AA',
+                  confirmButtonText: 'OK',
+                  allowEscapeKey: true,
+                  html: ("POR FAVOR LLENAR EL CAMPO TELÉFONO"),
+                  });
+
+		}else if(Correo==""){
+            Swal.fire({
+                  type: 'error',
+                  titleText: '¡Campo Incompleto!',
+                  confirmButtonColor: '#2C3E50',
+                  confirmButtonText: 'OK',
+                  allowEscapeKey: true,
+                  html: ("POR FAVOR LLENAR EL CAMPO CORREO ELECTRONICO"),
+                  });
+        
+        }else if(SelectMotivo==""){
+            Swal.fire({
+                  type: 'error',
+                  titleText: '¡Campo Incompleto!',
+                  confirmButtonColor: '#2C3E50',
+                  confirmButtonText: 'OK',
+                  allowEscapeKey: true,
+                  html: ("POR FAVOR SELECCIONAR EL CAMPO ASUNTO"),
+                  });
+
+        }else if(SelectUE==""){
+            Swal.fire({
+                  type: 'error',
+                  titleText: '¡Campo Incompleto!',
+                  confirmButtonColor: '#2C3E50',
+                  confirmButtonText: 'OK',
+                  allowEscapeKey: true,
+                  html: ("POR FAVOR SELECCIONAR EL CAMPO UNIDAD EJECUTORA"),
+                  });
+
+		}else if(Descripción==""){
+            Swal.fire({
+                  type: 'error',
+                  titleText: '¡Campo Incompleto!',
+                  confirmButtonColor: '#2C3E50',
+                  confirmButtonText: 'OK',
+                  allowEscapeKey: true,
+                  html: ("POR FAVOR LLENAR EL CAMPO DETALLE"),
+                  });
+
+		}
+		else{
+            Swal.fire({
+                    type: 'success',
+                    titleText: '¡Proceso realizado con éxito!',
+                    confirmButtonColor: '#2C3E50',
+                    confirmButtonText: 'OK',
+                    allowEscapeKey: true,
+                    html: '¡SUS DATOS SE ENVIARON CORRECTAMENTE!'
+                    });
+
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbwswbbmAlDqnQGjk8RAHRdrwiAsYduDxbYgADoj8TS98nrDnV7S1uFzwyzljK3HnDo/exec'
+                    const form = document.forms['formulario1']
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => $("#form_alerts").html("<div class='alert alert-success'><b>¡GRACIAS SU RESPUESTA HA SIDO RECIBIDA CON EXITO!</b></div>"))
+                        .catch(error => $("#form_alerts").html("<div class='alert alert-danger'><b>¡LA CONEXIÓN DE INTERNET ES INESTABLE!, POR FAVOR HAGA CLICK EN 'REGRESAR' Y VUELVA 'ENVIAR SU RESPUESTA'</b></div>"));
+                    })
+		}
+
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+<!--------------------------------------------Mensaje de Validación-------------------------------------------->
+    
+
+
+<!---------------------------------------------Mascara de Entrada--------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+<script type="text/javascript">
+    $("#Identificación").mask("0000-00000-0000");
+    $("#Teléfono").mask("0000-0000");
+    </script>
+
+
+<!--------------------------------------------Mayuscula-------------------------------------------->
+<script>
+function mayus(e) {
+e.value = e.value.toUpperCase();
+}
+ </script>
+
+
+
+<!--------------------------------------------Solo Letras-------------------------------------------->
+<script>
+  function soloLetras(e) {
+      key = e.keyCode || e.which;
+      tecla = String.fromCharCode(key).toString();
+      letras = " áéíóúabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚABCDEFGHIJKLMNÑOPQRSTUVWXYZ";//Se define todo el abecedario que se quiere que se muestre.
+      especiales = [8, 39, 110]; //Es la validación del KeyCodes, que teclas recibe el campo de texto.
+  
+      tecla_especial = false
+      for(var i in especiales) {
+          if(key == especiales[i]) {
+              tecla_especial = true;
+              break;
+          }
+      }
+  
+      if(letras.indexOf(tecla) == -1 && !tecla_especial){
+          return false;}}    
+</script>
+
+<!---------------------------------------------Audio con Click--------------------------------------------->
+<script>
+    const audio = new Audio();
+    audio.src = "./Click.mp3";
+    audio.volume = 0.2
+</script>
+
+
+
+<script>
+    (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+    if (form.checkValidity() === false) {
+    event.preventDefault();
+    event.stopPropagation();
+    }
+    form.classList.add('was-validated');
+    }, false);
+    });
+    }, false);
+    })();
+</script>
+
+</body>
+</html>
